@@ -10,7 +10,6 @@ target 'RAC_MovieDemo' do
   pod 'AFNetworking'
   pod 'JKCategories'
   pod 'YYWebImage'
-  pod 'ProgressHUD'
   pod 'SVProgressHUD'
   pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
   pod 'YYModel'

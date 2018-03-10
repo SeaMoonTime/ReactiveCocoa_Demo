@@ -3,7 +3,7 @@
 //  RAC_MovieDemo
 //
 //  Created by Yang on 15/01/2018.
-//  Copyright © 2018 leica-geosystems. All rights reserved.
+//  Copyright © 2018 seamoontime. All rights reserved.
 //
 
 #import "MovieViewController.h"
@@ -11,7 +11,6 @@
 #import "MovieViewModel.h"
 #import "MovieCell.h"
 #import <YYWebImage/YYWebImage.h>
-#import <ProgressHUD.h>
 #import <SVProgressHUD.h>
 #import "UITableView+FDTemplateLayoutCell.h"
 
@@ -35,14 +34,12 @@
     
     [self.movieVM.requestCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
         [self.tableView reloadData];
-//        [ProgressHUD dismiss];
         [SVProgressHUD dismiss];
     }];
     
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"q"] = _conditions;
     [self.movieVM.requestCommand execute:parameters];
-//    [ProgressHUD show:@"数据获取中..."];
     [SVProgressHUD show];
     
     self.tableView.fd_debugLogEnabled = YES;  

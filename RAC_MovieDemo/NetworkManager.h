@@ -3,7 +3,7 @@
 //  GNSSOrderTool
 //
 //  Created by Yang on 02/05/2017.
-//  Copyright © 2017 leica-geosystems. All rights reserved.
+//  Copyright © 2017 seamoontime. All rights reserved.
 //
 
 //封装网络库读取json数据
