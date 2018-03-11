@@ -10,7 +10,7 @@
 [ReactiveCocoa v2.5 源码解析之架构总览](http://blog.leichunfeng.com/blog/2015/12/25/reactivecocoa-v2-dot-5-yuan-ma-jie-xi-zhi-jia-gou-zong-lan/)
 
 # demo运行
-
+- 运行前请先进行`pod install`
 - 运行后，搜索框未输入时，搜索按钮不可用，在搜索框输入`电影名`或`导演名`等，如张艺谋，搜索按钮可用，点击按钮可得到相关的电影搜索结果；
 - demo网络数据采用的[豆瓣Api V2](https://developers.douban.com/wiki/?title=api_v2)中的电影搜索功能；
 
